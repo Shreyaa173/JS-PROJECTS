@@ -1,0 +1,89 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.main{
+    height: 100vh;
+    background-color: rgb(112, 184, 186);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.quote-box{
+    width: 50vw;
+    height: auto;
+    background: #fff;
+    border-radius: 25px;
+    text-align: center;
+    padding: 40px;
+    padding-top: 5px;
+    box-shadow: 0 10px 20px 0 rgba(0,0,0,0.5);
+}
+
+h1{
+    text-align: center;
+    font-size: 3rem;
+    padding-top: 20px;
+    position: relative;
+    margin-bottom: 10px;
+}
+
+.quote-box h1::after{
+    content: '';
+    width: 150px;
+    height: 3px;
+    border-radius: 3opx;
+    background: rgb(65, 117, 119);
+    position: absolute;
+    bottom: -5px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.content .quote{
+    font-size: 1.5rem;
+    margin: 50px 0;
+}
+
+.content .author{
+    display: block;
+    margin-top: 10px;
+    float: right;
+    position: relative;
+}
+
+.content .author::before{
+    content: '';
+    width: 20px;
+    height: 2px;
+    background: rgb(65, 117, 119);
+    position: absolute;
+    top: 50%;
+    left: -30px;
+}
+
+.buttons{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.button{
+    background-color: rgb(23,124,229);
+    color: white;
+    border: 1px solid rgb(23,124,229);
+    border-radius: 25px;
+    width: 150px;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-left: 4rem;
+    font-size: 1.15rem;
+    cursor: pointer;
+}
+
+
